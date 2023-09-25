@@ -18,7 +18,7 @@ export const ProcessList = ({dataWord,deleteItem,dataChecked,dataEdit}) => {
 
         {OnEdit ? <input value={teks} onChange={(e) => {setTeks(e.target.value)}} className='border rounded-sm text-[black]'/> : <span className='ml-[5px] text-sm checked:text-[red]'>{dataWord.task}</span>}
 
-        <div className='space-x-4 items-center flex absolute right-[470px] mt-1'>
+        <div className='space-x-4 items-center flex absolute lg:left-[705px] left-[260px] mt-1'>
           {/* <input className='cursor-pointer w-4 h-4 border-2 border-gray-500 rounded-sm bg-white checked:bg-white checked:border-green-700' checked={dataWord.complete} type='checkbox' onChange={(e) => {dataChecked(dataWord.complete)}}/> */}
           <input type='checkbox' checked={dataWord.complete} onChange={() => {dataChecked(dataWord.id)}}></input>
 
